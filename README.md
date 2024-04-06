@@ -146,11 +146,11 @@ To get an ssh connection
 
 <img src="https://imgur.com/l2X9OLE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-You have the option to try out different command lines
+You have the option to try out different command lines, those will immdeiately pop up on to the wireshark page as you type them in.
 
 To exit out of the ssh connection you simply type "exit" and hit "Enter" and you are now back on VM1's Command prompt.
 
-<img src="https://imgur.com/RyluOeE.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/RyluOeE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src=".png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
