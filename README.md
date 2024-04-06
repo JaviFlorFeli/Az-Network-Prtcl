@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+In this tutorial, I observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 
 
@@ -19,13 +19,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
-
-<h2>High-Level Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
 
 <h2>Actions and Observations</h2>
 
@@ -151,6 +144,21 @@ You have the option to try out different command lines, those will immdeiately p
 To exit out of the ssh connection you simply type "exit" and hit "Enter" and you are now back on VM1's Command prompt.
 
 <img src="https://imgur.com/RyluOeE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src=".png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+
+
+<img src="https://imgur.com/LDe18hS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+To observe DNS traffic, I used the filter udp.port == 53 and the filter dns as well and the command nslookup. I used the command nslookup followed by the websites of www.google.com and www.disney.com. There I observed the results of that traffi in doing so.
+
+<img src="https://imgur.com/aNQtKda.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+I filtere the traffic to dhcp. I used the comman ipconfig /renew. I hit enter and there I observed the live traffic of dhcp and seeing that my IP was reissued over in the powersheel command.
+
+<img src="https://imgur.com/oi7BiBf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+The filter is tcp.port == 3389. There is non-stop traffic because RDP is constantly showing me a live stream from one computer to another (in my case, my computer accessing the VM that is hosted on Azure)
+
+<img src="https://imgur.com/qS4fb0C.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
