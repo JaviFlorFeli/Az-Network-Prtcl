@@ -129,6 +129,28 @@ To unblock the traffic
 After the rule goes into effect, you will observe that all traffic has resumed.
 
 <img src="https://imgur.com/sbCf2Gm.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+Now we will filter the results to "ssh"
+
+<img src="https://imgur.com/x5CljiF.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+
+To get an ssh connection
+  - Go to powershell
+  - Type "ssh labuserjavi@10.0.0.5"
+     - You may look different of course. what we're doing is commanding a conncetion to VM2 through ssh, it will require the user of the VM2 and the private IP address
+  - Hit "Enter"
+  - It may ask you if you are sure if you want to connect, you will type "yes"
+  - Next it will ask for VM2's password, you will type that in
+    - *it will not show what you are typing on the screen, carefully and correctly type the password in and hit "Enter"*
+  - You will know that it connected when you see something similar to this "labuserjavi@VM2:~$"
+
+<img src="https://imgur.com/l2X9OLE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+You have the option to try out different command lines
+
+To exit out of the ssh connection you simply type "exit" and hit "Enter" and you are now back on VM1's Command prompt.
+
+<img src="https://imgur.com/RyluOeE.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <img src=".png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
